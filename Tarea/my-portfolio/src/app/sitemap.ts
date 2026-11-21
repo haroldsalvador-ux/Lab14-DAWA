@@ -18,7 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: project.featured ? 0.8 : 0.7,
-    images: [project.image.startsWith('http') ? project.image : `${baseUrl}${project.image}`],
+    // Next.js no escapa el "&" de las URLs de imágenes: sin esto el XML queda inválido
+    images: [(project.image.startsWith('http') ? project.image : `${baseUrl}${project.image}`).replace(/&/g, '&amp;')],
   }));
 
   return [...staticPages, ...projectPages];
