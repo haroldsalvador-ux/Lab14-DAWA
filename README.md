@@ -7,6 +7,8 @@ Desarrollo de Aplicaciones Web Avanzado · Tecsup · Harold Salvador
 | `Laboratorio/my-portfolio` | Guía: meta tags dinámicos, `next/image` con lazy loading, `sitemap.ts` y `robots.ts` |
 | `Tarea/my-portfolio` | Portafolio personal con página de contacto, sitemap y robots actualizados, desplegado con dominio propio |
 
+**Sitio:** https://harold-salvador.duckdns.org (dominio gratuito de DuckDNS asociado en Vercel)
+
 ## Resultados de Lighthouse (laboratorio)
 
 | Modo | Performance | Accessibility | Best Practices | SEO |

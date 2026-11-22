@@ -98,7 +98,8 @@ export const personalInfo = {
   location: 'Lima, Perú',
   github: 'https://github.com/haroldsalvador-ux',
   linkedin: 'https://linkedin.com/in/harold-david-salvador-zarate-4408b03a8',
-  siteUrl: (process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000').replace(/\/$/, ''),
+  // Dominio gratuito de DuckDNS asociado al proyecto en Vercel
+  siteUrl: (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://harold-salvador.duckdns.org').replace(/\/$/, ''),
   avatar: '/img/harold.jpg',
 };
 
